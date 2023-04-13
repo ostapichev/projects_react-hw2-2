@@ -6,7 +6,6 @@ const Launches = () => {
     let [launches, setLaunches] = useState([]);
     useEffect(() => {
         getLaunches().then(allLaunch => {
-                console.log(allLaunch);
                 setLaunches([...allLaunch]);
             })
     }, []);
